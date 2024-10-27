@@ -1,0 +1,424 @@
+img{
+     height: 70px;
+     width: 100px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Satisfy", cursive;
+}
+
+body{
+    background-color:aliceblue;
+    margin: 0;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+a{
+    color:chocolate;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+
+}
+/*for dekstop*/
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/*for mobile*/
+[class*="col-"]{
+   width: 100%;
+}
+
+/*NavBAR Start*/
+
+.navbar{
+    background-color:#8495f4;
+    padding: 1% 7%;
+    text-align: center;
+}
+.navbar h1{
+color: rgb(223, 115, 14);
+margin: 0;
+padding-top: 10px;
+}
+.navbar-menu{
+   display:flex;
+   flex-direction: column;
+   text-transform: uppercase; 
+}
+.navbar-menu a{
+    background-color: #80c0e8;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+.navbar-menu a:hover{
+    background-color: rgb(192, 201, 34);
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+/*NavBAR End*/
+
+/*Profile Start*/
+
+.profile{
+    padding: 50px 5px;
+    position: relative;
+    text-align: center;
+}
+.profile .top-icon{
+   position: absolute;
+   right: 60px;
+   top: 20px;
+   transition: transform 2s;
+}
+.profile .top-icon:hover{
+    transform: rotate(90deg);
+}
+
+.profile-desc h1{
+    font-family: "Satisfy", cursive;
+    font-size: 3rem;
+}
+.profile-desc p{
+    color:crimson;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+/*Profile End*/
+
+
+/*About Me Starts*/
+.about-me{
+    background-color: #8495f4;
+    padding: 1% 7%;
+    color:rgb(223, 9, 9);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.aboutme-image img{
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;
+}
+
+.about-me p{
+    text-align: center;
+}
+.about-me a{
+    font-size: 1.2rem;
+}
+
+.about-me::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+/*About Me Ends*/
+
+/*professional-experience Starts*/
+
+.professional-experience{
+    padding: 1% 0%;
+}
+.card{
+    background-color: #8495f4;
+    border-radius: 5px;
+    height: 700px;
+    transition: 0.3s;
+    padding: 10px;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+
+.card-icon{
+    text-align: center;
+}
+.rounded-img{
+    border:5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+.card-title h2{
+background-color: #80c0e8;
+padding: 10px;
+text-align: center;
+}
+.professional-experience::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+/*professional-experience Ends*/
+
+
+/*Skill Starts*/
+.skill-container{
+padding-right: 45px;
+padding-bottom: 20px;
+font-size: small;
+}
+.skill-container li{
+    list-style-type:none;
+    margin: 30px 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+}
+.skill-container li::before{
+    content:'';
+    position:absolute;
+    top:calc(100% + 5px);
+    left:0;
+    background-color: rgb(39, 1, 74);
+    width: 100%;
+    height: 10px;
+    border-radius: 1000px;
+}
+.skill-container li::after{
+    content:'';
+    position:absolute;
+    top:calc(100% + 5px);
+    left:0;
+    background-color: rgb(130, 12, 241);
+    width: 0%;
+    height: 25px;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
+ 
+}
+   .skill-container li.html::after{
+    animation-name: html;
+   }
+
+   @keyframes html {
+    to{
+        width:100%;
+        background-color: brown;
+    }}
+
+
+    .skill-container li.css::after{
+    animation-name: css;
+   }
+
+   @keyframes css {
+    to{
+        width:100%;
+        background-color: brown;
+    }}
+
+
+    .skill-container li.js::after{
+    animation-name: js;
+   }
+
+   @keyframes  js {
+    to{
+        width:20%;
+        background-color: brown;
+    }}
+
+
+
+   
+    .skill-container li.csharp::after {
+        animation-name: csharp;
+    }
+    
+    @keyframes csharp {
+    to {
+            width: 80%;
+            background-color: brown;
+        } }
+
+        .skill-container li.mvc::after {
+            animation-name: mvc;
+        }
+        
+        @keyframes mvc {
+        to {
+                width: 80%;
+                background-color: brown;
+            } }
+
+       
+   .skill-container li.netCore::after{
+    animation-name: netCore;
+   }
+
+   @keyframes  netCore {
+    to{
+        width:70%;
+        background-color: brown;
+    }}
+
+
+    .skill-container li.python::after{
+        animation-name: python;
+       }
+    
+       @keyframes python {
+        to{
+            width:70%;
+            background-color: brown;
+        }}
+
+        
+    .skill-container li.sql::after{
+        animation-name: sql;
+       }
+    
+       @keyframes sql {
+        to{
+            width:100%;
+            background-color: brown;
+        }}
+
+                
+        .skill-container li.java::after {
+            animation-name: java;
+        }
+        
+        @keyframes java {
+            to {
+                width: 70%;
+                background-color: brown;
+            }
+        }
+        
+
+        
+    .skill-container li.kotlin::after{
+        animation-name: kotlin;
+       }
+    
+       @keyframes kotlin {
+        to{
+            width:70%;
+            background-color: brown;
+        }}
+    
+  
+
+   
+
+/*Skill ends*/
+
+/*Contact starts */
+.contact{
+    text-align: center;
+}
+.contact-link{
+    background-color: #8495f4;
+}
+.contact input, textarea{
+    width:100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.contact-link button{
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(179, 112, 30);
+    cursor: pointer;
+    padding:15px;
+    margin:10px;
+    width: 100px;
+}
+
+    .media-buttons {
+        display: flex;
+        flex-direction: row; /* Aligns buttons in a row */
+        justify-content: space-around; /* Adjusts spacing between buttons */
+        align-items: center; /* Aligns buttons vertically */
+        padding-top: 40px;
+    }
+
+.btn {
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(179, 112, 30);
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width:150px;
+    text-align: center;
+
+}
+.btn:hover{
+    background-color: rgb(192, 201, 34);
+    }
+
+    .contact::after{
+        content: '';
+        display: table;
+        clear:both;
+    }
+
+/*Contact ends */
+
+/*Footer starts */
+
+.footer{
+    background-color: #8495f4;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+.footer-menu a{
+  display:block;
+  margin: 15px 50;
+  font-size: 1.2rem;
+}
+.footer-menu a:hover{
+    color:rgb(192, 201, 34);
+}
+.footer::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+/*Footer ends */
+

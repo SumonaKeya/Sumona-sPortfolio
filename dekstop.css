@@ -1,0 +1,157 @@
+body{
+    background-color: #1295cd;;
+}
+
+
+/*For dekstop*/
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+/*NavBAR Start*/
+.nav-logo{
+    text-align: left;
+}
+.nav-heading h1{
+    text-align: right;
+}
+.navbar-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar-menu a{
+    padding: 5px 10px;
+    margin:20px 0;
+   background-color: transparent;
+}
+/*NavBAR End*/
+
+ /*Profile Start*/
+
+
+.profile .top-icon{
+    right: 100px;
+    width: 120px;
+    transition: width 2s, transform 2s;
+ }
+ .profile .top-icon:hover{
+    width: 121px;
+    transform: rotate(90deg);
+ }
+ 
+ .profile-desc p{
+    color:rgb(5, 40, 192);
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+ /*Profile End*/
+
+
+ /*About Me Starts*/
+ .aboutme-image{
+    margin-top: 100px;
+ }
+ .aboutme-image img{
+
+height: 270px;
+width:250px;
+
+ }
+ .aboutme-desc p{
+    text-align: left;
+ }
+
+ /*About Me Ends*/
+
+ /*Skill Starts*/
+ .professional-experience{
+    padding: 1% 5;
+ }
+
+/*Skill Ends*/
+
+
+/*Contact starts */
+.contact{
+    text-align: center;
+}
+.contact-link{
+    background-color: #8495f4;
+}
+.contact input, textarea{
+    width:100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.contact-link button{
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(179, 112, 30);
+    cursor: pointer;
+    padding:15px;
+    margin:10px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.contact-link{
+ position: relative;
+}
+.media-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row; /* Aligns buttons in a row */
+    justify-content: space-around; /* Adjusts spacing between buttons */
+    align-items: center; /* Aligns buttons vertically */
+    padding-right: 50px;
+
+   
+}
+
+
+
+/*Footer starts */
+.footer{
+    margin-top: 80px;
+    display:flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.footer-menu {
+    display: flex;
+    flex-direction: row; /* Aligns links in a row */
+}
+
+.footer-menu a {
+    margin-bottom: 10px;
+    text-decoration: none; /* Optional: Removes underline from links */
+    font-size: 1.5rem;
+    padding-left: 70px;
+}
+
+.footer-desc {
+    white-space: nowrap; /* Ensures the text stays on one line */
+    margin-top: 170px; /* Removes the top margin to align with footer-menu */
+    margin-right: 50px; /* Adjusts the right margin */
+    text-align: right;
+}
+/*Footer Ends */
